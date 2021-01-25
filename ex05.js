@@ -23,7 +23,7 @@ o2.another = {};
 o2.another.name = '마이콜';
 o2.another.age = 30;
 
-console.log(o2);
+console.log(JSON.stringify(o2));
 
 // 생성방법3 - (J)ava(S)cript(O)bject(N)otation : 자바스크립트 객체 표기법을 사용하는 방법
 let o3 = {
@@ -35,14 +35,13 @@ let o3 = {
     }
 }
 
-console.log(o3);
+console.log(JSON.stringify(o3));
 
 // XmlHttpRequest 호스트(브라우저) 객체를 사용해서 통신에 많이 사용한다.
 let response = '{"no": 1, "name": "백정엽", "email":"qorwjdduq@gmail.com"}';
 let user = eval("(" + response + ")");
 console.log(typeof(user));
-console.log(user.no);
+console.log(JSON.stringify(user));
 
 
-"[{}, {}, {}]"
 
