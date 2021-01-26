@@ -1,11 +1,14 @@
 /* 배열 확장 : 리스트 메소드 추가 하기 */
 Array.prototype.insert = function(index, value){
-    if(value instanceof Array){
+    if(value instanceof Array) {
         // for(let i = 0; i < value.length; i++){
-        //     this.splice(index++, 0, value[i]);
+        //     this.splice(index, 0, value[i]);
+        //     index++;
         // }
-
-        
+        const _this = this;
+        value.forEach(function(v){
+            _this.splice(index++, 0, v);
+        });
     }else{
         this.splice(index, 0, value);
     }
