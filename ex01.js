@@ -53,12 +53,12 @@ f2 = new Function("a", "b", "return a + b");
 o2 = new Object();
 a2 = new Array();
 
-console.log(i2 + ":" + typeof(i2));
-console.log(b2 + ":" + typeof(b2));
-console.log(s2 + ":" + typeof(s2));
+console.log(i2 + ":" + typeof(i2) + ":" + (i2 instanceof Number));
+console.log(b2 + ":" + typeof(b2) + ":" + (b2 instanceof Boolean));
+console.log(s2 + ":" + typeof(s2) + ":" + (s2 instanceof String));
 console.log(typeof(f2));
-console.log(o2 + ":" + typeof(o2));
-console.log(a2 + ":" + typeof(a2));
+console.log(o2 + ":" + typeof(o2) + ":" + (o2 instanceof Object));
+console.log(a2 + ":" + typeof(a2) + ":" + (a2 instanceof Array));
 
 
 

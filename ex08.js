@@ -26,7 +26,7 @@ console.log(o2.school);
 o2.info = function(){
     console.log("비밀!")
 }
-
+o2.info();
 
 
 
